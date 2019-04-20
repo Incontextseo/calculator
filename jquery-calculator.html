@@ -84,24 +84,31 @@ var secondNumber = $("#second-number");
 var firstNumber 
 var operator 
 var secondNumber 
-
+var result
 
 $('.number').click(function() {
       console.log (operator)
-      if (firstNumber === undefined) {
-      
+      if (operator === undefined) {
+      firstNumber += $(this).val();
+      parseInt(firstNumber)
+      console.log("first" + firstNumber);
         } else {
-        secondNumber = $(this).val();
-        console.log("first" + firstNumber);
+        secondNumber += $(this).val();
+        parseInt(secondNumber)
         console.log("second" + secondNumber);
     };
-
   });
    
     $('.operator').click(function() {
       operator = $(this).val()
       console.log(operator)
     });
+
+    $('.equal').click(function() {
+      result = (firstNumber +operator + secondNumber)
+      console.log(result)
+
+    })
 
     // console.log(secondNumber)
 
