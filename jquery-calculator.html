@@ -78,10 +78,12 @@
 var firstNumber = document.getElementById("first-number");
 var operatorSymbol = document.getElementById("operator");
 var secondNumber = document.getElementById("second-number");
+var resultNumber = document.getElementById("result");
 
 var firstNumber = ($(button).val());
-var operator = ($(button).val());
+var operator = []
 var secondNumber = ($(button).val());
+var result = []
 
 $(document).ready(function() {
     $('.number').click(function() {
@@ -90,13 +92,11 @@ $(document).ready(function() {
 
     console.log(firstNumber)
 
-   
-
-    if(operator = val("minus"))
-    if(operator = val("plus"))
-    if(operator = val("times"))
-    if(operator = val("divide"))
-    if(operator = val("power"))
+    // if(operator = val("minus"))
+    // if(operator = val("plus"))
+    // if(operator = val("times"))
+    // if(operator = val("divide"))
+    // if(operator = val("power"))
 
     $('.operator').click(function() {
         alert($(this).val());
@@ -105,8 +105,6 @@ $(document).ready(function() {
     
     console.log(operator)
 
-  
-
     $('.number').click(function() {
         alert($(this).val());
 
@@ -114,18 +112,15 @@ $(document).ready(function() {
 
     console.log(secondNumber)
 
-    $(.equal).click(function()) {
-      alert($(this).val());
-    }
+    $('.equal').click(function() {
+        alert($(this).val());
+    })
+
 
     firstNumber.textContent = firstNumber;
     operatorSymbol.textContent = operator;
     secondNumber.textContent = secondNumber;
-
-
-});
-
-</script>
+    result.textContent = result;
 
 
 });
