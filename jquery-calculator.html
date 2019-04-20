@@ -75,62 +75,50 @@
 
 <script type="text/javascript">
 
-var firstNumber = document.getElementById("first-number");
-var operatorSymbol = document.getElementById("operator");
-var secondNumber = document.getElementById("second-number");
-
-var firstNumber = ($(button).val());
-var operator = ($(button).val());
-var secondNumber = ($(button).val());
-
 $(document).ready(function() {
-    $('.number').click(function() {
-        alert($(this).val());
-    });
 
-    console.log(firstNumber)
+var firstNumber = $("#first-number");
+var operatorSymbol = $("#operator");
+var secondNumber = $("#second-number");
 
+var firstNumber 
+var operator 
+var secondNumber 
+
+
+$('.number').click(function() {
+      console.log (operator)
+      if (firstNumber === undefined) {
+      
+        } else {
+        secondNumber = $(this).val();
+        console.log("first" + firstNumber);
+        console.log("second" + secondNumber);
+    };
+
+  });
    
-
-    if(operator = val("minus"))
-    if(operator = val("plus"))
-    if(operator = val("times"))
-    if(operator = val("divide"))
-    if(operator = val("power"))
-
     $('.operator').click(function() {
-        alert($(this).val());
-
+      operator = $(this).val()
+      console.log(operator)
     });
+
+    // console.log(secondNumber)
+
+    // $('.equal').click(function() {
+    //   alert($(this).val());
+    // })
     
-    console.log(operator)
-
-  
-
-    $('.number').click(function() {
-        alert($(this).val());
-
-    });
-
-    console.log(secondNumber)
-
-    $(.equal).click(function()) {
-      alert($(this).val());
-    }
 
     firstNumber.textContent = firstNumber;
     operatorSymbol.textContent = operator;
     secondNumber.textContent = secondNumber;
 
 
-});
-
+    });
 </script>
 
 
-});
-
-</script>
 
 </body>
 </html>
